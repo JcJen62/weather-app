@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     async function getWeather() {
       try{
-        const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=8db9fde1113d427ca65191701222003&q=${searchTerms}&days=10&aqi=no&alerts=no
+        const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=8db9fde1113d427ca65191701222003&q=${searchTerms}&days=3&aqi=no&alerts=no
       `)
       const data = await res.json()
 
